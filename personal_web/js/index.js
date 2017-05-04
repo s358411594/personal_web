@@ -10,10 +10,9 @@
                 $(".play_game").click(function(){
                     //加载首页之后的页面
                     $(".pt-page-2").load('warcraft.html',function(){
-                        $("window").load(function(){
-                            //随机切换
-                            page_switch("pt-page-1","pt-page-2");
-                        })
+                        //随机切换
+                        page_switch("pt-page-1","pt-page-2");
+
                     });
                 });
                     //进入简历

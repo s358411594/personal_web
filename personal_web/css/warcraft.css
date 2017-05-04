@@ -2,7 +2,7 @@
 .war_content{
     width:500px;
     height:100%;
-    background:url("http://opet1oimq.bkt.clouddn.com/map.png");
+    background:url("http://opet1oimq.bkt.clouddn.com/map_1.jpg");
     background-size: 100% 100%;
     margin: 0 auto;
     position: relative;
@@ -25,7 +25,7 @@
 .start_back{
     width: 500px;
     height: 100%;
-    background: url("http://opet1oimq.bkt.clouddn.com/load.png");
+    background: url("http://opet1oimq.bkt.clouddn.com/load.jpg");
     background-size: 100% 100%;
     text-align: center;
     overflow: hidden;
