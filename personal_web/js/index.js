@@ -9,11 +9,11 @@
                     //进入游戏
                 $(".play_game").click(function(){
                     //加载首页之后的页面
-                    // $(".pt-page-2").load('warcraft.html',function(){
+                    $(".pt-page-2").load('warcraft.html',function(){
                         //随机切换
                         page_switch("pt-page-1","pt-page-2");
 
-                    // });
+                    });
                 });
         });
     }
