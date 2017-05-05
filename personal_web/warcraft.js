@@ -1,5 +1,4 @@
-
-function loadplane(){
+(function () {
 //获取各元素
     var background = document.getElementById("id_content");
     var start_back = document.getElementsByClassName("start_back")[0];
@@ -780,4 +779,4 @@ function loadplane(){
             }
         }
     }
-};
+})();
