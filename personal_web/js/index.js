@@ -11,6 +11,7 @@
                     $(".pt-page-2").load('warcraft.html',function(){
                         //随机切换
                         page_switch("pt-page-1","pt-page-2");
+                        loadplane();
 
                     });
                 });
