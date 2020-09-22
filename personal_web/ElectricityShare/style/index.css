@@ -1,10 +1,16 @@
+#app{
+  font-size: 2.8vw;
+}
 .title{
   text-align: center;
-  font-size: 2vw;
   color: #f8621b;
 }
 .el-input {
-  width: auto;
+  width: 23vw;
+}
+.el-input .el-input__inner{
+  width: 23vw;
+  height: 7vw;
 }
 .row{
   display: flex;
