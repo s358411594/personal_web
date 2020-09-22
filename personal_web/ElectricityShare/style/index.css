@@ -1,0 +1,14 @@
+.title{
+  text-align: center;
+  font-size: 2vw;
+  color: #f8621b;
+}
+.el-input {
+  width: auto;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vw;
+}
