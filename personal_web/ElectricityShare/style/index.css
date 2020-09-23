@@ -1,20 +1,40 @@
-#app{
-  font-size: 2.8vw;
+@media screen and (min-width: 1028px){
+  #app{
+    font-size: 1.7vw;
+  }
+  .title{
+    text-align: center;
+    color: #f8621b;
+  }
+  .el-input {
+    width: auto;
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+  }
 }
-.title{
-  text-align: center;
-  color: #f8621b;
-}
-.el-input {
-  width: 23vw;
-}
-.el-input .el-input__inner{
-  width: 23vw;
-  height: 7vw;
-}
-.row{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1vw;
+@media screen and (max-width: 1028px) {
+  #app{
+    font-size: 2.4vw;
+  }
+  .title{
+    text-align: center;
+    color: #f8621b;
+  }
+  .el-input {
+    width: 23vw;
+  }
+  .el-input .el-input__inner{
+    width: 23vw;
+    height: 7vw;
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+  }
 }
