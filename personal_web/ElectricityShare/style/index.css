@@ -1,3 +1,26 @@
+/*公共*/
+body{
+  margin: 0;
+}
+.row > div{
+  align-items: center;
+}
+.row > div:first-child{
+  width: 50%;
+  display: flex;
+}
+.row > div:last-child{
+  width: 50%;
+  display: flex;
+}
+.inputLable{
+  width: 26vw;
+  text-align: right;
+}
+.everybodyPublic{
+  text-align: center;
+  margin: 2vw;
+}
 @media screen and (min-width: 1028px){
   #app{
     font-size: 1.7vw;
@@ -7,7 +30,7 @@
     color: #f8621b;
   }
   .el-input {
-    width: auto;
+    width: 20vw;
   }
   .row{
     display: flex;
@@ -25,10 +48,10 @@
     color: #f8621b;
   }
   .el-input {
-    width: 23vw;
+    width: 20vw;
   }
   .el-input .el-input__inner{
-    width: 23vw;
+    width: 20vw;
     height: 7vw;
   }
   .row{

@@ -19,13 +19,7 @@ var app = new Vue({
 
     },
     methods:{
-        calculate:function () {
-            this.airConditioningUnit=Number(this.airConditioningUnit)
-            console.log(this.airConditioningUnit)
-            let electricityAll=this.electricityA + this.electricityB + this.electricityC + this.electricityD;
-            this.averagePublic= (this.totalElectricity - (this.electricityA + this.electricityB + this.electricityC + this.electricityD)*
-                this.airConditioningUnit)/(this.daysA + this.daysB + this.daysC + this.daysD)
-        }
+
     },
     computed:{
         averagePublic: function () {

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>华府西苑3-804电费分担算法</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>华府西苑3-804</title>
     <link rel="stylesheet" href="elementUI/index.css">
     <link rel="stylesheet" href="style/index.css">
 </head>
@@ -10,64 +11,97 @@
 <div id="app">
     <div class="title">华府西苑3-804电费情况</div>
     <div class="row">
-        <span>所用的总电费：</span><el-input v-model.number="totalElectricity" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>空调多少钱一度(元)：</span><el-input :disabled=true v-model="airConditioningUnit" placeholder="请输入内容"></el-input>
+        <div>
+            <span class="inputLable">所用的总电费：</span><el-input v-model.number="totalElectricity" placeholder="请输入内容"></el-input>
+        </div>
+        <div>
+            <span class="inputLable">空调多少钱一度(元)：</span><el-input :disabled=true v-model="airConditioningUnit" placeholder="请输入内容"></el-input>
+        </div>
     </div>
     <div class="row">
-        <span>A房间空调耗电量：</span><el-input v-model.number="electricityA" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>A房间公共区域天数：</span><el-input v-model.number="daysA" placeholder="请输入内容"></el-input>
+      <div>
+            <span class="inputLable">A房间空调耗电量：</span><el-input v-model.number="electricityA" placeholder="请输入内容"></el-input>
+        </div><div>
+            <span class="inputLable">A房间公共区域天数：</span><el-input v-model.number="daysA" placeholder="请输入内容"></el-input>
+        </div>
     </div>
     <div class="row">
-        <span>B房间空调耗电量：</span><el-input v-model.number="electricityB" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>B房间公共区域天数：</span><el-input v-model.number="daysB" placeholder="请输入内容"></el-input>
+        <div>
+            <span class="inputLable">B房间空调耗电量：</span><el-input v-model.number="electricityB" placeholder="请输入内容"></el-input>
+        </div><div>
+            <span class="inputLable">B房间空调耗电量：</span><el-input v-model.number="electricityB" placeholder="请输入内容"></el-input>
+        </div>
     </div>
     <div class="row">
-        <span>C房间空调耗电量：</span><el-input v-model.number="electricityC" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>C房间公共区域天数：</span><el-input v-model.number="daysC" placeholder="请输入内容"></el-input>
+        <div>
+            <span class="inputLable">C房间空调耗电量：</span><el-input v-model.number="electricityC" placeholder="请输入内容"></el-input>
+        </div><div>
+            <span class="inputLable">C房间空调耗电量：</span><el-input v-model.number="electricityC" placeholder="请输入内容"></el-input>
+        </div>
     </div>
     <div class="row">
-        <span>D房间空调耗电量：</span><el-input v-model.number="electricityD" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>D房间公共区域天数：</span><el-input v-model.number="daysD" placeholder="请输入内容"></el-input>
+        <div>
+            <span class="inputLable">D房间空调耗电量：</span><el-input v-model.number="electricityD" placeholder="请输入内容"></el-input>
+        </div>
+        <div>
+             <span class="inputLable">D房间公共区域天数：</span><el-input v-model.number="daysD" placeholder="请输入内容"></el-input>
+        </div>
     </div>
-    <div class="row">
-        <span>每人每天公共电费平摊为(保留两位小数)：</span><el-input :disabled=true v-model="averagePublic" placeholder="请输入内容"></el-input>
+    <div class="">
+        <div class="everybodyPublic">
+            <span class="inputLable">每人每天公共电费平摊为(保留两位小数)：</span><el-input :disabled=true v-model="averagePublic" placeholder="请输入内容"></el-input>
+        </div>
     </div>
 
     <div class="row">
-        <span>A房间公共区域电费：</span><el-input :disabled=true v-model="PublicAreaElectricityA" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>B房间公共区域电费：</span><el-input :disabled=true v-model="PublicAreaElectricityB" placeholder="请输入内容"></el-input>
+        <div>
+            <span class="inputLable">A房间公共区域电费：</span><el-input :disabled=true v-model="PublicAreaElectricityA" placeholder="请输入内容"></el-input>
+        </div>
+        <div>
+            <span class="inputLable">B房间公共区域电费：</span><el-input :disabled=true v-model="PublicAreaElectricityB" placeholder="请输入内容"></el-input>
+        </div>
     </div>
     <div class="row">
-        <span>C房间公共区域电费：</span><el-input :disabled=true v-model="PublicAreaElectricityC" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>D房间公共区域电费：</span><el-input :disabled=true v-model="PublicAreaElectricityD" placeholder="请输入内容"></el-input>
+        <div>
+            <span class="inputLable">C房间公共区域电费：</span><el-input :disabled=true v-model="PublicAreaElectricityC" placeholder="请输入内容"></el-input>
+        </div>
+        <div>
+            <span class="inputLable">D房间公共区域电费：</span><el-input :disabled=true v-model="PublicAreaElectricityD" placeholder="请输入内容"></el-input>
+        </div>
     </div>
 
     <div class="row">
-        <span>A房间已经支出金额：</span><el-input  v-model.number="spendingA" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>A房间应出金额：</span><el-input :disabled=true  v-model="spendingShouldA" placeholder="请输入内容"></el-input>
+        <div>
+            <span class="inputLable">A房间已经支出金额：</span><el-input  v-model.number="spendingA" placeholder="请输入内容"></el-input>
+        </div>
+        <div>
+            <span class="inputLable">A房间应出金额：</span><el-input :disabled=true  v-model="spendingShouldA" placeholder="请输入内容"></el-input>
+        </div>
     </div>
     <div class="row">
-        <span>B房间已经支出金额：</span><el-input  v-model.number="spendingB" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>B房间应出金额：</span><el-input  :disabled=true v-model.number="spendingShouldB" placeholder="请输入内容"></el-input>
+        <div>
+            <span class="inputLable">B房间已经支出金额：</span><el-input  v-model.number="spendingB" placeholder="请输入内容"></el-input>
+
+        </div>
+        <div>
+            <span class="inputLable">B房间应出金额：</span><el-input  :disabled=true v-model.number="spendingShouldB" placeholder="请输入内容"></el-input>
+        </div>
     </div>
     <div class="row">
-        <span>C房间已经支出金额：</span><el-input  v-model.number="spendingC" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>C房间应出金额：</span><el-input :disabled=true v-model.number="spendingShouldC" placeholder="请输入内容"></el-input>
+        <div>
+            <span class="inputLable">C房间已经支出金额：</span><el-input  v-model.number="spendingC" placeholder="请输入内容"></el-input>
+        </div>
+&nbsp;       <div>
+            <span class="inputLable">C房间应出金额：</span><el-input :disabled=true v-model.number="spendingShouldC" placeholder="请输入内容"></el-input>
+        </div>
     </div>
     <div class="row">
-        <span>D房间已经支出金额：</span><el-input  v-model.number="spendingD" placeholder="请输入内容"></el-input>
-        &nbsp;&nbsp;
-        <span>D房间应出金额：</span><el-input :disabled=true v-model.number="spendingShouldD" placeholder="请输入内容"></el-input>
+        <div>
+            <span class="inputLable">D房间已经支出金额：</span><el-input  v-model.number="spendingD" placeholder="请输入内容"></el-input>
+        </div>
+    &nbsp; <div>
+            <span class="inputLable">D房间应出金额：</span><el-input :disabled=true v-model.number="spendingShouldD" placeholder="请输入内容"></el-input>
+        </div>
     </div>
 
 </div>
